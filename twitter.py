@@ -4,7 +4,7 @@ import falcon
 import json
 from falcon_cors import CORS
 
-cors = CORS(allow_origins_list=['http://localhost:3000'])
+cors = CORS(allow_origins_list=['*'])
 
 class TwitterResource(object):
 	def on_get(self,req,resp,username):
